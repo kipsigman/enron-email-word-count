@@ -25,11 +25,11 @@ You must have [sbt](http://www.scala-sbt.org/) and [Apache Spark](http://spark.a
 2. Use spark-submit to run your application
 
     ```sh
-    spark-submit --class kipsigman.enron.EmailWordCount --master local[4] target/scala-2.11/enron-email-word-count_2.11-1.0.jar
+    $ spark-submit --class kipsigman.enron.EmailWordCount --master local[4] target/scala-2.11/enron-email-word-count_2.11-1.0.jar
     ...
     ```
     
-3. View word counts in output file(s). These will be located in 'data/out/emails-word-count/'.
+3. View word counts in output file(s). These will be located in 'data/out/email-word-counts/'.
 
 ### Production with full dataset
 TBD

@@ -50,7 +50,7 @@ object EmailWordCount {
         .sortBy(wordCount => wordCount._2, false)
         
       // Write word counts to output file
-      val outputPath = "data/out/emails-word-count"
+      val outputPath = "data/out/email-word-counts"
       FileUtil.rmrf(outputPath)
       wordCounts.saveAsTextFile(outputPath)
     } finally {
